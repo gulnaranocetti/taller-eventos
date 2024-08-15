@@ -6,4 +6,12 @@ document.addEventListener('DOMContentLoaded', function(){
     divContent.addEventListener('click', function(){
         alert('Hola! Soy el div');
     })
+
+    // Seleccionar el botón usando su id
+    const boton = document.getElementById('miBoton');
+    
+    // Añadir el manejador de eventos para el clic en el botón
+    boton.addEventListener('click', (event) => {
+        event.stopPropagation(); // Evitar que el evento se propague al div
+    });
 })
