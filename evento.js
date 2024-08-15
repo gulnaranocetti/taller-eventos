@@ -10,6 +10,6 @@ divContent.addEventListener('click', function(){
 const boton = document.getElementById('miBoton');
 
 // Añadir el manejador de eventos para el clic en el botón
-boton.addEventListener('click', (event) => {
+boton.addEventListener('click', function(event) {
     event.stopPropagation(); // Evitar que el evento se propague al div
 });
